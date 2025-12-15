@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronos Shift - The Changing of Time</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Arial', sans-serif;
+        }
+        #game-container {
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .info {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <strong>Chronos Shift</strong> | Arrow Keys: Move | Space: Jump | T: Toggle Time (Day/Night)
+    </div>
+    <div id="game-container"></div>
+    <!-- Phaser 3 Library from CDN -->
+    <!-- If this CDN is blocked, download Phaser from https://phaser.io/download/stable and reference it locally -->
+    <script src="https://unpkg.com/phaser@3.70.0/dist/phaser.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
